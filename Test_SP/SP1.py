@@ -9,13 +9,12 @@ def main():
                       'Server=IN2396424W1\SQLEXPRESS;'
                       'Database=Test_DB_SSS;'
                       'Trusted_Connection=yes;')
-    spname = "IAG_SP"
+    spname = "test_SP"
     cursor = conn.cursor()
     cursor.execute('EXECUTE dbo.' + spname)
     conn.commit()
     print(spname + ' Completed!!!')
     getfinalresults(conn)
-
 
 def getfinalresults(conn):
     tnameS = "automation_test_result"
