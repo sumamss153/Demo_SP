@@ -25,6 +25,8 @@ steps:
     versionSpec: '$(python.version)'
   displayName: 'Use Python $(python.version)'
 
+- script: |
+    pip install pyodbc
 
 - script: |
     python Test_SP/SP1.py
