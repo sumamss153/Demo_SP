@@ -17,7 +17,7 @@ def main():
     issueDict = {
             'project': {'key': 'DQT'},
             'summary': summary,
-            'issuetype': {'name': 'Sub-task'},
+            'issuetype': {'name': 'Task'},
     }  
     child = jira.create_issue(fields=issueDict)
     print("Created new Sub-task: " + child.key)
