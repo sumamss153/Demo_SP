@@ -13,14 +13,13 @@ def main():
                 basic_auth=(email, api_token))
     print("Jira Connection Successful!!!")
     summary = "Bug_" + str(date.today())
-    print("Creating new Bug ")
+    print("Creating new Sub-task...")
     issueDict = {
             'project': {'key': 'DQT'},
             'summary': summary,
-            'description': 'Creating of an issue using project keys and issue type names using the REST API',
-            'issuetype': {'name': 'Bug'}}
-        
+            'issuetype': {'name': 'Sub-task'},
+    }  
     child = jira.create_issue(fields=issueDict)
-    print("Created new Bug: " + child.key)
+    print("Created new Sub-task: " + child.key)
 
 main()
