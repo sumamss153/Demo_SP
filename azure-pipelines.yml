@@ -31,5 +31,5 @@ steps:
     pip install JIRA
 
 - script: |
-    python Test_SP/resp_req_Jira.py
+    python Test_SP/Jira_Test.py
   displayName: 'pytest'
