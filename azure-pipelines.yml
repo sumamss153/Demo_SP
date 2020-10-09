@@ -33,14 +33,3 @@ steps:
 - script: |
     python Test_SP/Jira_Test.py
   displayName: 'pytest'
-
-- task: InvokeRESTAPI@1
-  inputs:
-    connectionType: 'connectedServiceNameARM'
-    azureServiceConnection: 'Abonnement Visual Studio Professional(41270ab8-d22e-4dfe-86ee-dea2f8e8c22b)'
-    method: 'POST'
-    headers: |
-      {
-      "Content-Type":"application/json" 
-      }
-    waitForCompletion: 'false'
