@@ -12,7 +12,7 @@ def main():
     jira = JIRA(options={'server': url},
                 basic_auth=(email, api_token))
     print("Jira Connection Successful!!!")
-    summary = "Bug_" + str(date.today())
+    summary = "Task_" + str(date.today())
     print("Creating new Sub-task...")
     issueDict = {
             'project': {'key': 'DQT'},
