@@ -17,7 +17,7 @@ def main():
     issueDict = {
             'project': {'key': 'DQT'},
             'summary': summary,
-            'description": "Creating of an issue using project keys and issue type names using the REST API',
+            'description': 'Creating of an issue using project keys and issue type names using the REST API',
             'issuetype': {'name': 'Bug'},
         
     child = jira.create_issue(fields=issueDict)
