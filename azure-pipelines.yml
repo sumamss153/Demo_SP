@@ -27,5 +27,5 @@ steps:
 
 
 - script: |
-    python src/Test_SP/SP1.py
+    python Test_SP/SP1.py
   displayName: 'pytest'
