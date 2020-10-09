@@ -12,6 +12,15 @@ def main():
     jira = JIRA(options={'server': url},
                 basic_auth=(email, api_token))
     print("Jira Connection Successful!!!")
-   
+    summary = "Bug_" + str(date.today())
+    print("Creating new Bug ")
+    issueDict = {
+            'project': {'key': 'DQT'},
+            'summary': summary,
+            'description": "Creating of an issue using project keys and issue type names using the REST API',
+            'issuetype': {'name': 'Bug'},
+        
+    child = jira.create_issue(fields=issueDict)
+    print("Created new Bug: " + child.key)
 
 main()
