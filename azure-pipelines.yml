@@ -27,7 +27,5 @@ steps:
 
 
 - script: |
-    pip install pytest pytest-azurepipelines
-    pytest
-    python SP1.py
+    python src/Test_SP/SP1.py
   displayName: 'pytest'
