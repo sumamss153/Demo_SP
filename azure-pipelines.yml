@@ -27,6 +27,8 @@ steps:
 
 - script: |
     pip install pyodbc
+    pip install pandas
+    pip install JIRA
 
 - script: |
     python Test_SP/SP1.py
